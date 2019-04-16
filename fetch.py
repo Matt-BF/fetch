@@ -105,7 +105,7 @@ if __name__ == "__main__":
                                      fetch.py [txt file] [fasta file]")
     parser.add_argument("fasta_file")
     parser.add_argument("txt_file")
-    parser.add_argument("--jobs", description="number of cores (default 1)",
+    parser.add_argument("--jobs", help="number of cores (default 1)",
                         default=1)
     args = parser.parse_args()
 
