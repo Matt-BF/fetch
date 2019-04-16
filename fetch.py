@@ -91,7 +91,7 @@ class Fetch:
         for k, coords in scaff_dict.items():
             for seq in self.seqs:
                 if k == seq.id:
-                    seq = seq[int(coords[0]):int(coords[1]) + 1]
+                    seq = seq[int(coords[0])-1:int(coords[1]) + 1] # array 0 but seqs start at 1; also, use an inclusive range
                     seq.id = seq.id + "_{}_{}".format(coords[0], coords[1])
                     desired_seqs.append(seq)
 
