@@ -7,6 +7,7 @@ This script encapsulates what used to be 3 widely used perl scripts in our lab. 
 `python3 fetch.py [TXT FILE] [FASTA FILE] --jobs [optional number of cores, default 1]`
 
 TXT FILE: `.txt` file containing sequences in a pattern respective to one of the 3 functions (`fetch_fam`, `fetch_seqs` or `fetch_seqs_coords`)
+
 FASTA FILE: `FASTA` file to search for sequences
 
 ---
